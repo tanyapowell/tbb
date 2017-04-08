@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Tenor+Sans');
+@import './mixins';
+
+$default-bg-colour: #ffd89b;
+$black: #000;
+$white: #fff;
+$blue: rgba(25, 84, 123, .4);
+$yellow: rgba(255, 216, 155, .4);
+
+$font-headings: 'Bungee Inline', cursive;
+$font-body: 'Tenor Sans', sans-serif;
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.jumbotron-fluid {
+  background: $blue;
+  background: -webkit-radial-gradient(ellipse farthest-corner at 45px 45px, $yellow 40%, $blue 75%), url('http://lorempixel.com/g/1200/800/') no-repeat;
+  background: radial-gradient(ellipse farthest-corner at 45px 45px, $yellow 40%, $blue 75%), url('http://lorempixel.com/g/1200/800/') no-repeat;
+  background-blend-mode: overlay, darken;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+
+  // Once background image has been decided, need to make responsive images in photoshop and use media queries to display the correct one
+}
+
+.wrapper {
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  @include breakpoint(large) { width: 70%; }
+  @include breakpoint(medium) { width: 80%; }
+  @include breakpoint(small) { width: 100%; }
+}
+
+.content {
+  @include border-radius(.5em);
+  background: rgba($white, .3);
+  color: $black;
+  height: 100%;
+  padding: .5em;
+  width: 60%;
+
+  @include breakpoint(large) { width: 60%; }
+  @include breakpoint(medium) { width: 80%; }
+  @include breakpoint(small) { width: 95%; }
+
+  h1 {
+    font-family: $font-headings;
+    font-size: 350%;
+    text-align: center;
+    @include breakpoint(large) { font-size: 350%; }
+    @include breakpoint(medium) { font-size: 300%; }
+    @include breakpoint(small) { font-size: 250%; }
+  }
+
+  h2 {
+    color: $white;
+    font-family: $font-headings;
+    text-align: justify;
+    @include breakpoint(large) { font-size: 200%; }
+    @include breakpoint(medium) { font-size: 175%; }
+    @include breakpoint(small) { font-size: 150%; }
+  }
+
+  p {
+    color: $black;
+    font-family: $font-headings;
+    text-align: justify;
+    @include breakpoint(large) { font-size: 120%; }
+    @include breakpoint(medium) { font-size: 100%; }
+    @include breakpoint(small) { font-size: 80%; }
+  }
+
+  form {
+    font-family: $font-body;
+    @include breakpoint(large) { font-size: 120%; }
+    @include breakpoint(medium) { font-size: 110%; }
+    @include breakpoint(small) { font-size: 100%; }
+
+    button {
+      background-color: $black;
+      border-color: $black;
+      @include breakpoint(large) { width: 20%; }
+      @include breakpoint(medium) { width: 30%; }
+      @include breakpoint(small) {
+        font-size: 80%;
+        width: 30%;
+      }
+
+      &:hover {
+        background-color: $white;
+        border-color: $white;
+        color: $black;
+      }
+
+    }
+
+    input {
+      display: inline-block;
+      text-align: left;
+      width: 80%;
+      @include breakpoint(large) { width: 80%; }
+      @include breakpoint(medium) { width: 67%; }
+      @include breakpoint(small) {
+        font-size: 80%;
+        width: 67%;
+      }
+    }
+  }
+
+  .hashtag {
+    margin-top: 1em;
+    text-align: center;
+  }
+}
+
+.social-media {
+  text-align: center;
+
+  i {
+    color: $white;
+
+    &:hover {
+      color: $black;
+    }
+  }
+
+  .fa-4x {
+    padding-left: .5em;
+    @include breakpoint(large) { font-size: 4em; }
+    @include breakpoint(medium) { font-size: 3.5em; }
+    @include breakpoint(small) { font-size: 2.5em; }
+  }
+}
