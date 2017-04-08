@@ -1,17 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Cormorant:700');
-@import "./mixins";
+@import './mixins';
 
-html, body {
-  width: 100%;
+$default-bg-colour: #ffd89b;
+$black: #000;
+$blue: rgba(25, 84, 123, .6);
+$yellow: rgba(255, 216, 155, .6);
+
+$font-headings: 'Cormorant', serif;
+$font-body: 'Lato', sans-serif;
+
+html,
+body {
   height: 100%;
+  width: 100%;
 }
 
 .container-fluid {
-  width: 100%;
+  background: $default-bg-colour;
+  background: -webkit-linear-gradient(to right, $blue, $yellow), url('http://lorempixel.com/g/1200/800/') no-repeat;
+  background: linear-gradient(to right, $blue, $yellow), url('http://lorempixel.com/g/1200/800/') no-repeat;
+  background-position: 50% 50%;
   height: 100%;
-  background: #ffd89b;
-  background: -webkit-linear-gradient(to right, rgba(25, 84, 123, 0.6), rgba(255, 216, 155, 0.6)), url('http://lorempixel.com/g/1200/800/') no-repeat;  background-position: 50% 50%;
-  background: linear-gradient(to right, rgba(25, 84, 123, 0.6), rgba(255, 216, 155, 0.6)), url('http://lorempixel.com/g/1200/800/') no-repeat;  background-position: 50% 50%;
+  width: 100%;
 }
 
 .wrapper {
@@ -21,7 +31,7 @@ html, body {
 }
 
 .content {
-  color: #000;
+  color: $black;
   font-family: 'Cormorant', serif;
   height: 100%;
   overflow: auto;
@@ -35,9 +45,11 @@ html, body {
 
 h1,
 h2 {
-  font-family: 'Cormorant', serif;
+  font-family: $font-headings;
 }
 
+button,
+input,
 p {
-  font-family: 'Lato', sans-serif;
+  font-family: $font-body;
 }
