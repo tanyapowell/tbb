@@ -53,8 +53,8 @@ body {
   .content h1 {
     font-family: "Bungee Inline", cursive;
     font-size: 350%;
-    padding-bottom: .5em;
-    padding-top: .5em;
+    padding-bottom: .4em;
+    padding-top: .4em;
     text-align: center; }
     @media (max-width: 64.375em) {
       .content h1 {
@@ -68,12 +68,12 @@ body {
   .content h2 {
     color: #930007;
     font-family: "Bungee Inline", cursive;
-    padding-bottom: .7em;
-    padding-top: .7em;
+    padding-bottom: .4em;
+    padding-top: .4em;
     text-align: justify; }
     @media (max-width: 64.375em) {
       .content h2 {
-        font-size: 200%; } }
+        font-size: 180%; } }
     @media (max-width: 64.375em) {
       .content h2 {
         font-size: 175%; } }
@@ -83,8 +83,8 @@ body {
   .content p {
     color: #000;
     font-family: "Bungee Inline", cursive;
-    padding-bottom: .7em;
-    padding-top: .7em;
+    padding-bottom: .4em;
+    padding-top: .4em;
     text-align: justify; }
     @media (max-width: 64.375em) {
       .content p {

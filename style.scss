@@ -57,8 +57,8 @@ body {
   h1 {
     font-family: $font-headings;
     font-size: 350%;
-    padding-bottom: .5em;
-    padding-top: .5em;
+    padding-bottom: .4em;
+    padding-top: .4em;
     text-align: center;
     @include breakpoint(large) { font-size: 350%; }
     @include breakpoint(medium) { font-size: 300%; }
@@ -68,10 +68,10 @@ body {
   h2 {
     color: $red;
     font-family: $font-headings;
-    padding-bottom: .7em;
-    padding-top: .7em;
+    padding-bottom: .4em;
+    padding-top: .4em;
     text-align: justify;
-    @include breakpoint(large) { font-size: 200%; }
+    @include breakpoint(large) { font-size: 180%; }
     @include breakpoint(medium) { font-size: 175%; }
     @include breakpoint(small) { font-size: 150%; }
   }
@@ -79,8 +79,8 @@ body {
   p {
     color: $black;
     font-family: $font-headings;
-    padding-bottom: .7em;
-    padding-top: .7em;
+    padding-bottom: .4em;
+    padding-top: .4em;
     text-align: justify;
     @include breakpoint(large) { font-size: 120%; }
     @include breakpoint(medium) { font-size: 100%; }
