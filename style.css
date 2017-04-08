@@ -1,14 +1,15 @@
-@import url("https://fonts.googleapis.com/css?family=Cormorant:700");
+@import url("https://fonts.googleapis.com/css?family=Bungee+Inline|Tenor+Sans");
 html,
 body {
   height: 100%;
   width: 100%; }
 
-.container-fluid {
-  background: #ffd89b;
-  background: -webkit-linear-gradient(to right, rgba(25, 84, 123, 0.6), rgba(255, 216, 155, 0.6)), url("http://lorempixel.com/g/1200/800/") no-repeat;
-  background: linear-gradient(to right, rgba(25, 84, 123, 0.6), rgba(255, 216, 155, 0.6)), url("http://lorempixel.com/g/1200/800/") no-repeat;
-  background-position: 50% 50%;
+.jumbotron-fluid {
+  background: rgba(25, 84, 123, 0.4);
+  background: -webkit-radial-gradient(ellipse farthest-corner at 45px 45px, rgba(255, 216, 155, 0.4) 40%, rgba(25, 84, 123, 0.4) 75%), url("http://lorempixel.com/g/1200/800/") no-repeat;
+  background: radial-gradient(ellipse farthest-corner at 45px 45px, rgba(255, 216, 155, 0.4) 40%, rgba(25, 84, 123, 0.4) 75%), url("http://lorempixel.com/g/1200/800/") no-repeat;
+  background-blend-mode: overlay, darken;
+  background-size: cover;
   height: 100%;
   width: 100%; }
 
@@ -16,32 +17,137 @@ body {
   align-content: center;
   display: flex;
   justify-content: center; }
+  @media (max-width: 64.375em) {
+    .wrapper {
+      width: 70%; } }
+  @media (max-width: 50em) {
+    .wrapper {
+      width: 80%; } }
+  @media (max-width: 37.5em) {
+    .wrapper {
+      width: 100%; } }
 
 .content {
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  border-radius: 0.5em;
+  background-clip: padding-box;
+  background: rgba(255, 255, 255, 0.3);
   color: #000;
-  font-family: 'Cormorant', serif;
   height: 100%;
-  overflow: auto;
-  padding: 20px;
-  resize: both;
-  width: 50%; }
+  padding: .5em;
+  width: 60%; }
   @media (max-width: 64.375em) {
     .content {
-      width: 70%; } }
+      width: 60%; } }
   @media (max-width: 50em) {
     .content {
       width: 80%; } }
   @media (max-width: 37.5em) {
     .content {
       width: 95%; } }
+  .content h1 {
+    font-family: "Bungee Inline", cursive;
+    font-size: 350%;
+    text-align: center; }
+    @media (max-width: 64.375em) {
+      .content h1 {
+        font-size: 350%; } }
+    @media (max-width: 50em) {
+      .content h1 {
+        font-size: 300%; } }
+    @media (max-width: 37.5em) {
+      .content h1 {
+        font-size: 250%; } }
+  .content h2 {
+    color: #fff;
+    font-family: "Bungee Inline", cursive;
+    text-align: justify; }
+    @media (max-width: 64.375em) {
+      .content h2 {
+        font-size: 200%; } }
+    @media (max-width: 50em) {
+      .content h2 {
+        font-size: 175%; } }
+    @media (max-width: 37.5em) {
+      .content h2 {
+        font-size: 150%; } }
+  .content p {
+    color: #000;
+    font-family: "Bungee Inline", cursive;
+    text-align: justify; }
+    @media (max-width: 64.375em) {
+      .content p {
+        font-size: 120%; } }
+    @media (max-width: 50em) {
+      .content p {
+        font-size: 100%; } }
+    @media (max-width: 37.5em) {
+      .content p {
+        font-size: 80%; } }
+  .content form {
+    font-family: "Tenor Sans", sans-serif; }
+    @media (max-width: 64.375em) {
+      .content form {
+        font-size: 120%; } }
+    @media (max-width: 50em) {
+      .content form {
+        font-size: 110%; } }
+    @media (max-width: 37.5em) {
+      .content form {
+        font-size: 100%; } }
+    .content form button {
+      background-color: #000;
+      border-color: #000; }
+      @media (max-width: 64.375em) {
+        .content form button {
+          width: 20%; } }
+      @media (max-width: 50em) {
+        .content form button {
+          width: 30%; } }
+      @media (max-width: 37.5em) {
+        .content form button {
+          font-size: 80%;
+          width: 30%; } }
+      .content form button:hover {
+        background-color: #fff;
+        border-color: #fff;
+        color: #000; }
+    .content form input {
+      display: inline-block;
+      text-align: left;
+      width: 80%; }
+      @media (max-width: 64.375em) {
+        .content form input {
+          width: 80%; } }
+      @media (max-width: 50em) {
+        .content form input {
+          width: 67%; } }
+      @media (max-width: 37.5em) {
+        .content form input {
+          font-size: 80%;
+          width: 67%; } }
+  .content .hashtag {
+    margin-top: 1em;
+    text-align: center; }
 
-h1,
-h2 {
-  font-family: "Cormorant", serif; }
-
-button,
-input,
-p {
-  font-family: "Lato", sans-serif; }
+.social-media {
+  text-align: center; }
+  .social-media i {
+    color: #fff; }
+    .social-media i:hover {
+      color: #000; }
+  .social-media .fa-4x {
+    padding-left: .5em; }
+    @media (max-width: 64.375em) {
+      .social-media .fa-4x {
+        font-size: 4em; } }
+    @media (max-width: 50em) {
+      .social-media .fa-4x {
+        font-size: 3.5em; } }
+    @media (max-width: 37.5em) {
+      .social-media .fa-4x {
+        font-size: 2.5em; } }
 
 /*# sourceMappingURL=style.css.map */
