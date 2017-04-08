@@ -23,8 +23,8 @@ body {
 
 .jumbotron-fluid {
   background: $blue;
-  background: -webkit-radial-gradient(ellipse farthest-corner at 45px 45px, $yellow 40%, $blue 75%), url('./test.jpeg') no-repeat;
-  background: radial-gradient(ellipse farthest-corner at 45px 45px, $yellow 40%, $blue 75%), url('./test.jpeg') no-repeat;
+  background: -webkit-radial-gradient(ellipse farthest-corner at 45px 45px, $yellow 40%, $blue 75%), url('./test.jpg') no-repeat;
+  background: radial-gradient(ellipse farthest-corner at 45px 45px, $yellow 40%, $blue 75%), url('./test.jpg') no-repeat;
   background-blend-mode: overlay, darken;
   background-size: cover;
   height: 100%;

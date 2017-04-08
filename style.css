@@ -9,8 +9,8 @@ body {
 
 .jumbotron-fluid {
   background: rgba(25, 84, 123, 0.9);
-  background: -webkit-radial-gradient(ellipse farthest-corner at 45px 45px, rgba(255, 216, 155, 0.9) 40%, rgba(25, 84, 123, 0.9) 75%), url("./test.jpeg") no-repeat;
-  background: radial-gradient(ellipse farthest-corner at 45px 45px, rgba(255, 216, 155, 0.9) 40%, rgba(25, 84, 123, 0.9) 75%), url("./test.jpeg") no-repeat;
+  background: -webkit-radial-gradient(ellipse farthest-corner at 45px 45px, rgba(255, 216, 155, 0.9) 40%, rgba(25, 84, 123, 0.9) 75%), url("./test.jpg") no-repeat;
+  background: radial-gradient(ellipse farthest-corner at 45px 45px, rgba(255, 216, 155, 0.9) 40%, rgba(25, 84, 123, 0.9) 75%), url("./test.jpg") no-repeat;
   background-blend-mode: overlay, darken;
   background-size: cover;
   height: 100%;
